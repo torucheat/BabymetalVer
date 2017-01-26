@@ -30,7 +30,7 @@ namespace BabymetalVer
         }
         public override string ToString()
         {
-            return string.Format("{0} - {1}: {2}", Songname, Interpret, Songdauer);
+            return string.Format("{0} - {1}", Interpret, Songname);
         }
     }
 }

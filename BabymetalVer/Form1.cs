@@ -23,5 +23,22 @@ namespace BabymetalVer
             dlg_neu dialog = new dlg_neu();
             dialog.ShowDialog();
         }
+        private void FillListbox()
+        {
+            lbx_songs.Items.Clear();
+            try
+            {
+                lbx_songs.Items.AddRange(DataProvider.GetAlleKommentare().ToArray());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "FEHLER");
+            }
+        }
+
+        private void btn_aendern_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

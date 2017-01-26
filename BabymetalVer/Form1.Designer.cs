@@ -47,13 +47,13 @@
             // lbx_songs
             // 
             this.lbx_songs.BackColor = System.Drawing.SystemColors.InfoText;
-            this.lbx_songs.Font = new System.Drawing.Font("Wayne Fonts", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbx_songs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbx_songs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbx_songs.FormattingEnabled = true;
-            this.lbx_songs.ItemHeight = 16;
+            this.lbx_songs.ItemHeight = 24;
             this.lbx_songs.Location = new System.Drawing.Point(12, 43);
             this.lbx_songs.Name = "lbx_songs";
-            this.lbx_songs.Size = new System.Drawing.Size(283, 324);
+            this.lbx_songs.Size = new System.Drawing.Size(283, 316);
             this.lbx_songs.TabIndex = 0;
             // 
             // menuStrip1
