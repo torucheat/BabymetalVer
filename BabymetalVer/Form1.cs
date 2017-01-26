@@ -15,17 +15,13 @@ namespace BabymetalVer
         public Form1()
         {
             InitializeComponent();
+            FillListbox();
         }
 
         private void neuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dlg_neu dialog = new dlg_neu();
             dialog.ShowDialog();
-        }
-
-        private void btn_aendern_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
