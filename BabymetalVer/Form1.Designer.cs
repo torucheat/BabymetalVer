@@ -109,6 +109,7 @@
             this.btn_loeschen.TabIndex = 3;
             this.btn_loeschen.Text = "Löschen";
             this.btn_loeschen.UseVisualStyleBackColor = false;
+            this.btn_loeschen.Click += new System.EventHandler(this.btn_loeschen_Click);
             // 
             // label1
             // 

@@ -38,6 +38,12 @@ namespace BabymetalVer
 
         private void btn_aendern_Click(object sender, EventArgs e)
         {
+            dlg_aendern dialog = new dlg_aendern();
+            dialog.ShowDialog();
+        }
+
+        private void btn_loeschen_Click(object sender, EventArgs e)
+        {
 
         }
     }
