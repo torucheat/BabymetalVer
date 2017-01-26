@@ -16,5 +16,18 @@ namespace BabymetalVer
         {
             InitializeComponent();
         }
+        public cls_song Songs
+        {
+            get;
+            set;
+        }
+        public dlg_aendern(cls_song song)
+        {
+            InitializeComponent();
+            Songs = song;
+            tbx_song.Text = song.Songname;
+            tbx_interpret.Text = song.Interpret;
+            tbx_dauer.Text = Convert.ToString(song.Songdauer);
+        }
     }
 }

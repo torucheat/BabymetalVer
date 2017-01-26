@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbx_dauer = new System.Windows.Forms.TextBox();
+            this.tbx_interpret = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbx_song = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox3
+            // tbx_dauer
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 20);
-            this.textBox3.TabIndex = 11;
+            this.tbx_dauer.Location = new System.Drawing.Point(83, 64);
+            this.tbx_dauer.Name = "tbx_dauer";
+            this.tbx_dauer.Size = new System.Drawing.Size(189, 20);
+            this.tbx_dauer.TabIndex = 11;
             // 
-            // textBox2
+            // tbx_interpret
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 20);
-            this.textBox2.TabIndex = 10;
+            this.tbx_interpret.Location = new System.Drawing.Point(83, 38);
+            this.tbx_interpret.Name = "tbx_interpret";
+            this.tbx_interpret.Size = new System.Drawing.Size(189, 20);
+            this.tbx_interpret.TabIndex = 10;
             // 
             // label3
             // 
@@ -70,12 +70,12 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Interpret:";
             // 
-            // textBox1
+            // tbx_song
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 20);
-            this.textBox1.TabIndex = 7;
+            this.tbx_song.Location = new System.Drawing.Point(83, 12);
+            this.tbx_song.Name = "tbx_song";
+            this.tbx_song.Size = new System.Drawing.Size(189, 20);
+            this.tbx_song.TabIndex = 7;
             // 
             // label1
             // 
@@ -113,11 +113,11 @@
             this.ClientSize = new System.Drawing.Size(284, 134);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbx_dauer);
+            this.Controls.Add(this.tbx_interpret);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbx_song);
             this.Controls.Add(this.label1);
             this.Name = "dlg_aendern";
             this.Text = "Ändern";
@@ -128,11 +128,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbx_dauer;
+        private System.Windows.Forms.TextBox tbx_interpret;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbx_song;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

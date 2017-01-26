@@ -39,7 +39,11 @@ namespace BabymetalVer
         private void btn_aendern_Click(object sender, EventArgs e)
         {
             dlg_aendern dialog = new dlg_aendern();
-            dialog.ShowDialog();
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+                DataProvider.Insert(dialog.Songs);
+                lbx_songs.Items.AddRange(DataProvider.GetAlleKommentare().ToArray());
+            }
         }
 
         private void btn_loeschen_Click(object sender, EventArgs e)
