@@ -37,16 +37,34 @@ namespace BabymetalVer
             else
                 return false;
         }
+        #region Insert
+        public static void Insert(cls_song song)
+        {
+            if (Open())
+            {
+                string sql = "insert into tbl_song (SONGNAME, INTERPRET, SONGDAUER) VALUES(@Titel @Interpret @Songdauer)";
+                MySqlCommand command = new MySqlCommand(sql, m_connection);
+
+                command.Parameters.Add("@Songname", MySqlDbType.VarChar).Value = song.Songname;
+                command.Parameters.Add("@Interpret", MySqlDbType.VarChar).Value = song.Interpret;
+                command.Parameters.Add("@Songdauer", MySqlDbType.Int32).Value = song.Songdauer;
+                command.ExecuteNonQuery();
+                song.ID = Convert.ToUInt32(command.LastInsertedId);
+                Close();
+            }
+        }
+        #endregion
         #region Update
         public static void UpdateArtikel(cls_song song)
         {
             if (Open())
             {
-                string sql = "update tbl_song set Songname = @Songname Songdauer = @Songdauer where id = @id";
+                string sql = "update tbl_song set Songname = @Songname Interpret = @Interpret Songdauer = @Songdauer where id = @id";
                 MySqlCommand command = new MySqlCommand(sql, m_connection);
 
                 command.Parameters.Add("@id", MySqlDbType.UInt32).Value = song.ID;
                 command.Parameters.Add("@Songname", MySqlDbType.VarChar).Value = song.Songname;
+                command.Parameters.Add("@Interpret", MySqlDbType.VarChar).Value = song.Interpret;
                 command.Parameters.Add("@Songdauer", MySqlDbType.DateTime).Value = song.Songdauer;
                 command.ExecuteNonQuery();
                 Close();
@@ -73,7 +91,7 @@ namespace BabymetalVer
             List<cls_song> songliste = new List<cls_song>();
             if (Open())
             {
-                string sql = "Select tbl_song.id, Songname, Songdauer From tbl_song ";
+                string sql = "Select tbl_song.id, Songname, Interpret, Songdauer From tbl_song ";
                 MySqlCommand command = new MySqlCommand(sql, m_connection);
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -81,7 +99,8 @@ namespace BabymetalVer
                     cls_song song = new cls_song();
                     song.ID = reader.GetUInt32("ID");
                     song.Songname = reader.GetString("Songname");
-                    song.Songdauer = reader.GetDateTime("Songdauer");
+                    song.Interpret = reader.GetString("Interpret");
+                    song.Songdauer = reader.GetInt32("Songdauer");
                     songliste.Add(song);
                 }
                 Close();

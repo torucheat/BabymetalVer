@@ -18,14 +18,19 @@ namespace BabymetalVer
             get;
             set;
         }
-        public DateTime Songdauer
+        public string Interpret
+        {
+            get;
+            set;
+        }
+        public Int32 Songdauer
         {
             get;
             set;
         }
         public override string ToString()
         {
-            return string.Format("{0} - {1}", Songname, Songdauer);
+            return string.Format("{0} - {1}: {2}", Songname, Interpret, Songdauer);
         }
     }
 }
