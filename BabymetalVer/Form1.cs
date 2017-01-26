@@ -22,5 +22,10 @@ namespace BabymetalVer
             dlg_neu dialog = new dlg_neu();
             dialog.ShowDialog();
         }
+
+        private void btn_aendern_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

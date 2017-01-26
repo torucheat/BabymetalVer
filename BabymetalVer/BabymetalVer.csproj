@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="cls_song.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="dlg_aendern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlg_aendern.Designer.cs">
+      <DependentUpon>dlg_aendern.cs</DependentUpon>
+    </Compile>
     <Compile Include="dlg_neu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dlg_aendern.resx">
+      <DependentUpon>dlg_aendern.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlg_neu.resx">
       <DependentUpon>dlg_neu.cs</DependentUpon>
     </EmbeddedResource>

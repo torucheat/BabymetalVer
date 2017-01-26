@@ -97,6 +97,7 @@
             this.btn_aendern.TabIndex = 2;
             this.btn_aendern.Text = "Ändern";
             this.btn_aendern.UseVisualStyleBackColor = true;
+            this.btn_aendern.Click += new System.EventHandler(this.btn_aendern_Click);
             // 
             // btn_loeschen
             // 
