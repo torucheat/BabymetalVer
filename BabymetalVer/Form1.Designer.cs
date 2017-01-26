@@ -46,10 +46,14 @@
             // 
             // lbx_songs
             // 
+            this.lbx_songs.BackColor = System.Drawing.SystemColors.InfoText;
+            this.lbx_songs.Font = new System.Drawing.Font("Wayne Fonts", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbx_songs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbx_songs.FormattingEnabled = true;
+            this.lbx_songs.ItemHeight = 16;
             this.lbx_songs.Location = new System.Drawing.Point(12, 43);
             this.lbx_songs.Name = "lbx_songs";
-            this.lbx_songs.Size = new System.Drawing.Size(283, 329);
+            this.lbx_songs.Size = new System.Drawing.Size(283, 324);
             this.lbx_songs.TabIndex = 0;
             // 
             // menuStrip1
@@ -86,6 +90,7 @@
             // 
             // btn_aendern
             // 
+            this.btn_aendern.BackgroundImage = global::BabymetalVer.Properties.Resources.by;
             this.btn_aendern.Location = new System.Drawing.Point(12, 378);
             this.btn_aendern.Name = "btn_aendern";
             this.btn_aendern.Size = new System.Drawing.Size(75, 23);
@@ -95,16 +100,20 @@
             // 
             // btn_loeschen
             // 
+            this.btn_loeschen.BackColor = System.Drawing.Color.Transparent;
+            this.btn_loeschen.BackgroundImage = global::BabymetalVer.Properties.Resources.by;
             this.btn_loeschen.Location = new System.Drawing.Point(93, 378);
             this.btn_loeschen.Name = "btn_loeschen";
             this.btn_loeschen.Size = new System.Drawing.Size(75, 23);
             this.btn_loeschen.TabIndex = 3;
             this.btn_loeschen.Text = "Löschen";
-            this.btn_loeschen.UseVisualStyleBackColor = true;
+            this.btn_loeschen.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(340, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 13);
@@ -114,6 +123,7 @@
             // lbl_name
             // 
             this.lbl_name.AutoSize = true;
+            this.lbl_name.BackColor = System.Drawing.Color.Transparent;
             this.lbl_name.Location = new System.Drawing.Point(340, 68);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(116, 13);
@@ -123,6 +133,7 @@
             // lbl_dauer
             // 
             this.lbl_dauer.AutoSize = true;
+            this.lbl_dauer.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dauer.Location = new System.Drawing.Point(385, 97);
             this.lbl_dauer.Name = "lbl_dauer";
             this.lbl_dauer.Size = new System.Drawing.Size(34, 13);
@@ -132,6 +143,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(340, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
@@ -152,6 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BabymetalVer.Properties.Resources.by;
             this.ClientSize = new System.Drawing.Size(605, 415);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -162,6 +175,7 @@
             this.Controls.Add(this.btn_aendern);
             this.Controls.Add(this.lbx_songs);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
